@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Online CV</title>
+    <link rel="stylesheet" href="css/OnlineCV.css">
+    <link rel="stylesheet" href="css/OnlineCVResponsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <button onclick="backToTop()" id="myBtn" title="Go to top">Top</button>
+    <div class="header-section">
+        <a class="page-title" onClick="window.location.reload()">Bogdan Popa</p>
+            <nav class="topnav" id="myLinks">
+                <a onclick="refreshPage()" href="#homeSection">Home</a>
+                <a href="#resumeSection">Resume</a>
+                <a href="#portfolioSection">Portfolio</a>
+                <a href="#contactSection">Contact</a>
+                <button onclick="darkMode()" class="bi bi-brightness-high-fill" id="toggleDark"></button>
+            </nav>
+    </div>
+    <div class="black-background">
+        <div class="introduction-section">
+            <div class="left-container">
+                <p class="introduction-paragraph">Welcome to my Online CV</p>
+            </div>
+            <div class="right-container">
+                <div>
+                    <p class="right-container-paragraph">Junior</p>
+                    <p class="right-container-paragraph">Front</p>
+                    <p class="right-container-paragraph">End</p>
+                    <p class="right-container-paragraph">Developer</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-me-section" id="resumeSection">
+            <div class="about-me-title">CV Resume</div>
+            <a href="file:///C:/Users/TUF/Downloads/Popa%20Bogdan-Octavian.pdf" target="_blank"
+                class="about-me-paragraph">Download</a>
+        </div>
+        <div class="known-technologies-section">
+            <div class="title-technologies">Known programming languages</div>
+            <div class="logos">
+                <img class="logo-size" src="images/html.gif">
+                <img class="logo-size" src="images/css.gif">
+                <img class="logo-size" src="images/javascript.gif">
+            </div>
+        </div>
+        <div class="portfolio-section" id="portfolioSection">
+            <div class="portfolio-title-section">
+                <p class="portfolio-subtitle">Portfolio</p>
+                <p class="portfolio-paragraph">Personal projects</p>
+            </div>
+            <div class="first-project">
+                <div class="left-container-project-one">Grid Project</div>
+                <a href="./projects/grid/grid.html" target="_blank" class="right-container-project-one"></a>
+            </div>
+            <div class="second-project">
+                <div class="left-container-project-two">Rock Paper Scissors</div>
+                <a href="./projects/rockpaperscissors/RockPaperScissorsDOM.html" target="_blank"
+                    class="right-container-project-two"></a>
+            </div>
+            <div class="third-project">
+                <div class="left-container-project-three">Contact Form</div>
+                <a href="./projects/contactForm/contact.html" target="_blank" class="right-container-project-three"></a>
+            </div>
+        </div>
+        <div class="contact-section" id="contactSection">
+            <div class="left-container-contact">
+                <p class="left-container-p">Get in Touch</p>
+                <div class="form">
+                    <form action="https://formspree.io/f/xzbqzwov" method="POST" target="_blank">
+                        <div class="form-box">
+                            <div class="group-name">
+                                <p class="form-text">Name</p>
+                                <input id="firstNameTextbox" class="textbox" class="textbox-name" type="text" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-box-second">
+                            <div class="email-group">
+                                <p class="form-text">Email Address</p>
+                                <input class="textbox" class="textbox-email" type="text" name="email" required>
+                            </div>
+                            <div>
+                                <p class="form-text">Send a message</p>
+                                <textarea name="message" class="textbox" id="contact-textarea"></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="submit" type="submit" value="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="right-container-contact">Get in Touch</div>
+        </div>
+        <div class="location">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87425.82311589249!2d23.546301314854652!3d46.783481731325566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c1f916c0b8b%3A0xbbc601c331f148b!2sCluj-Napoca!5e0!3m2!1sen!2sro!4v1673471021408!5m2!1sen!2sro"
+                width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer-section">
+            <div>
+                <p class="footer-name">Bogdan Popa</p>
+                <p class="footer-email">bogdan17popa@gmail.com</p>
+                <a href="https://www.linkedin.com/in/bogdan-popa-a19b6625b" target="_blank">
+                    <img class="linkedin-logo" src="images/linkedin32.png">
+                </a>
+            </div>
+        </div>
+        <script src="./javascript/OnlineCV.js"></script>
+</body>
+
+</html>
